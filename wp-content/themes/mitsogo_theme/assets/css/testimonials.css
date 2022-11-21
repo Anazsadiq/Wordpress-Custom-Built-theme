@@ -1,0 +1,117 @@
+/* Google Fonts - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+.curved-background__curved {
+  /* Background color */
+  background-color: #eeeeee;
+
+  /* You can use gradient background color such as */
+  /* background: linear-gradient(rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.1) 100%); */
+
+  /* Curved corners */
+  border-top-left-radius: 50% 10%;
+  border-top-right-radius: 50% 10%;
+
+  /* Size */
+  height: 300px;
+  width: 100%;
+}
+
+.slide-container{
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
+.slide-content{
+  margin-right: -18rem;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.slide-content1{
+  margin-right: -18rem;
+  overflow: hidden;
+  border-radius: 0;
+}
+.card{
+
+  background-color: #FFF;
+}
+.imgnoborder{
+  border: none !important;
+}
+
+.image-content,
+.card-content{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
+.image-content{
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
+
+.card-image{
+  position: relative;
+  height: 150px;
+  width: 150px;
+  background: #FFF;
+  padding: 3px;
+}
+.card-image .card-img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+
+}
+.name{
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
+.description{
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
+
+.swiper-navBtn{
+  color: #383838;
+  transition: color 0.3s ease;
+}
+.swiper-navBtn:hover{
+  color: #080808;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+  font-size: 35px;
+}
+.swiper-button-next{
+  right: 0;
+}
+.swiper-button-prev{
+  left: 0;
+}
+.swiper-pagination-bullet{
+  background-color: #808080;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active{
+  background-color: #ffffff !important ;
+  color:white;
+  border:1.5px solid black
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .slide-content{
+    margin: 0 10px;
+  }
+  .swiper-navBtn{
+    display: none;
+  }
+}
